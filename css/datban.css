@@ -1,0 +1,189 @@
+/* Đặt bàn */
+.text-center-header {
+    margin-top: 200px;
+}
+
+.text-center-footer {
+    margin-bottom: 200px;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+}
+
+.bg-form {
+    border: 10px solid rgb(240, 249, 252);
+    border-radius: 20px;
+    background: rgb(247, 247, 247);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 200px;
+    /* min-width: 300px;
+    height: auto; */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+/*content*/
+.row {
+    padding-top: 10px;
+    margin: 2%;
+}
+
+/*input, select*/
+.row input,
+.row select {
+    border: none;
+    background: rgb(247, 247, 247);
+    border-bottom: 1px solid lightblue;
+    outline: none;
+}
+
+.row p {
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#address {
+    text-align: center;
+}
+
+#address i {
+    color: rgb(245, 128, 128);
+}
+
+.bg-logo {
+    display: inline-block;
+    max-width: 100px;
+    max-height: 130px;
+    text-align: center;
+    color: slategray;
+    font-weight: 600;
+}
+
+
+#bg-logo-phan {
+    background: orange;
+    background-image: url('https://phanexpress.com/WebLauPhan/order/phan-icon-selected.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    /*background-size: ;*/
+    border: none;
+    border-radius: 100px;
+}
+
+#bg-logo-lau {
+    background: orange;
+    background-image: url('https://phanexpress.com/WebLauPhan/order/logo-lau.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    /*background-size: ;*/
+    border: none;
+    border-radius: 100px;
+}
+
+#bg-logo-tong {
+    background: orange;
+    background-image: url('https://phanexpress.com/WebLauPhan/order/logo-tong.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    /*background-size: cover;*/
+    border: none;
+    border-radius: 100px;
+}
+
+
+#submit {
+    width: 90%;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    margin: 5%;
+    background: orange;
+    border-radius: 30px;
+}
+
+.row input {
+    width: 96%;
+    height: 25px;
+    margin-bottom: 30px;
+}
+
+.row-choose select {
+    width: 96%;
+    height: 31px;
+    margin-bottom: 30px;
+}
+
+.row-choose-date {
+    width: 80%;
+}
+
+.hide-address {
+    display: none;
+}
+
+.show-address {
+    display: block !important;
+}
+
+.text-red {
+    color: rgb(230, 74, 74) !important;
+    font-weight: 1000 !important;
+    font-size: 22px !important;
+}
+
+@media only screen and (max-width: 841px) {
+    .space-top {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .space-top {
+        margin-top: 0;
+    }
+
+    .cap-restaurant {
+        text-align: center;
+    }
+
+    .bg-form {
+        width: 80% !important;
+    }
+
+    .text-center-header {
+        margin-top: 100px;
+    }
+
+    .text-center-footer {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .bg-form {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 345px) {
+    .bg-form {
+        width: 98% !important;
+    }
+}
+
+@media (max-width: 315px) {
+    .bg-form {
+        width: 120% !important;
+    }
+}

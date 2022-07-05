@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(lightblue, lightgray);
+    min-width: 300px;
+    font-family: 'Finlandica', sans-serif;
+    font-size: 20px;
+}
+
+/* header and footer*/
+nav .img-logo {
+    width: auto;
+    height: 38px;
+}
+
+nav .active {
+    color: rgb(211, 154, 47) !important;
+    font-weight: 800;
+    /* border-bottom: 2px solid orange; */
+}
+
+footer .col-md-5 h3 {
+    font-size: 20px;
+}
+
+footer .col-md-5 p {
+    font-size: 15px;
+}
+
+footer .col-md-6 i {
+    font-size: 40px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-logo {
+        width: auto;
+        height: 30px;
+    }
+
+    footer .col-md-5 h3,
+    footer .col-md-5 p {
+        text-align: center;
+    }
+}
