@@ -31,7 +31,7 @@
 
 <body>
   <!-- header -->
-  <nav class="navbar navbar-expand-md " style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-md position-fixed" style="background-color: #e3f2fd;">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="https://lauphan.com/WebLauPhan/theme/logo_phan.svg" alt="Lẩu Phan" class="img-logo">
@@ -59,13 +59,16 @@
           </li>
         </ul>
         <form class="d-flex" role="login">
-          <button class="btn btn-outline-info" type="submit">Đăng nhập <i class="fa-solid fa-user"></i></button>
+          <button class="btn btn-outline-secondary" type="submit">Đăng nhập <i class="fa-solid fa-user"></i></button>
         </form>
       </div>
     </div>
   </nav>
   <!-- main -->
   <div class="container">
+    <h2 class="text-center text-center-header">
+      Đặt hàng
+    </h2>
     <!-- banner -->
     <div class="banner-top p-2 m-2 rounded">
       <div class="text-center align-mid">
@@ -186,23 +189,28 @@
         <div class="bg-form">
           <h3>Các món đã Chọn</h3>
         
-            <div class="d-flex flex-nowrap">
-              <img src="https://cdn.lauphan.com/photo-storage/myFile-1640705920870.jpeg" alt="Món ăn" width="60px" height="60px" class="m-2">
-              <div class="m-2"><span class="fw-bold">Name</span> 
-                <p class="fs-6">
-                  Định lượng:
-                </p>
+            <div class="container">
+            <div class="row">
+              <div class="col-3">
+              <img src="https://cdn.lauphan.com/photo-storage/myFile-1640705920870.jpeg" alt="Món ăn" width="60px" height="60px" class="mt-2">
               </div>
-              <div>
-                <p class="text-orange">Giá tiền:</p>
-                <span> 
-                  <i class="fa-solid fa-circle-minus"></i>
-                  <span class="price">  </span>
-                  <i class="fa-solid fa-circle-plus"></i>      
-                </span>
+              
+              <div class="col-6">
+              <span class="fw-bold">Name</span> 
+                  <p class="fs-6">
+                  Description
+                  </p>
+              </div>
+              <div class="col-3">
+                  <p class="text-orange" style="width: 80px">Giá tiền<br></p>
+                  <span> 
+                  <i class="fa-solid fa-circle-minus text-orange" id="btn-minus-${dishes[i].id}"></i>
+                  <span class="price"> 0 </span>
+                  <i class="fa-solid fa-circle-plus text-orange" id="btn-plus-${dishes[i].id}"></i>      
+                  </span>
+              </div>
               </div>
             </div>
-
             <hr>
             <p>Tổng hóa đơn</p>
             <p>Giảm giá khuyến mại</p>

@@ -175,12 +175,12 @@ function showListDish() {
     console.log(typeDish)
     for (let i in dishes) {
         const dishDiv = document.createElement('div')
-        dishDiv.classList.add('col-md-6')
+        dishDiv.classList.add('col-lg-6')
         for (let j in type_dish) {
             const listType = document.getElementById(`type-${type_dish[j].id}`)
             if (type_dish[j].id === dishes[i].type_id) {
                 dishDiv.innerHTML = `
-                    <div class="d-flex flex-nowrap  bd-highlight mb-3">
+                    <div class="d-flex bd-highlight mb-3">
                     <div class="p-2 bd-highlight">
                     <img src="${dishes[i].imgLink}" alt="Món ăn" width="60px" height="60px" class="mt-2">
                     </div>
@@ -192,11 +192,11 @@ function showListDish() {
                         </p>
                     </div>
                     <div class="ms-auto p-2 bd-highlight">
-                        <p class="text-orange">Giá tiền: <br>${dishes[i].price}</p>
+                        <p class="text-orange" style="width: 80px">Giá tiền:<br> ${dishes[i].price}</p>
                         <span> 
-                        <i class="fa-solid fa-circle-minus hide" id="btn-plus-${dishes[i].id}"></i>
+                        <i class="fa-solid fa-circle-minus hide text-orange" id="btn-minus-${dishes[i].id}"></i>
                         <span class="price">  </span>
-                        <i class="fa-solid fa-circle-plus" id="btn-minus-${dishes[i].id}"></i>      
+                        <i class="fa-solid fa-circle-plus" id="btn-plus-${dishes[i].id}"></i>      
                         </span>
                     </div>
                     </div>

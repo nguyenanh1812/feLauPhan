@@ -20,8 +20,12 @@
     margin: 2%;
 }
 
+.btn-rest:focus {
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.986), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.3);
+}
 .btn-rest:hover {
-    box-shadow: 0 14px 28px rgba(247, 241, 241, 0.986), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.986), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .bg-form {

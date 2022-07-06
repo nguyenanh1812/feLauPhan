@@ -25,3 +25,13 @@
         height: 150px;
     }
 }
+
+.bg-form {
+    box-sizing: border-box;
+    min-height: 600px ;
+    border-radius: 2px;
+    background: rgb(247, 247, 247);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    margin-bottom: 20px;
+    padding: 20px;
+}

@@ -7,7 +7,17 @@ body {
     font-size: 20px;
 }
 
+i:hover {
+    transform: scale(1.2);
+}
+
 /* header and footer*/
+nav {
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
 /* nav {
     background-color: #f0e6db !important;
 }
@@ -47,5 +57,24 @@ footer .col-md-6 i {
     footer .col-md-5 h3,
     footer .col-md-5 p {
         text-align: center;
+    }
+}
+
+.text-center-header {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+    .text-center-header {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-center-header {
+        margin-top: 80px;
+        margin-bottom: 20px;
     }
 }

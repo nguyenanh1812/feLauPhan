@@ -31,7 +31,7 @@
 
 <body>
   <!-- header -->
-  <nav class="navbar navbar-expand-md " style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-md position-fixed" style="background-color: #e3f2fd;">
     <div class="container">
       <a class="navbar-brand" aria-current="page" href="index.html">
         <img src="https://lauphan.com/WebLauPhan/theme/logo_phan.svg" alt="Lẩu Phan" class="img-logo">
@@ -59,19 +59,22 @@
           </li>
         </ul>
         <form class="d-flex" role="login">
-          <button class="btn btn-outline-info" type="submit">Đăng nhập <i class="fa-solid fa-user"></i></button>
+          <button class="btn btn-outline-secondary" type="submit">Đăng nhập <i class="fa-solid fa-user"></i></button>
         </form>
       </div>
     </div>
   </nav>
   <!-- main -->
-  <div class="container-fuild">
+  <div class="container-fuild" style="margin-top: 50px;">
     <!-- Slide show banner -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -84,16 +87,87 @@
           <img src="https://cdn.lauphan.com/photo-storage/myFile-1641441790289.jpeg" class="d-block sl-size" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </div>
+  <!-- thương hiệu -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="container col-md-6">
+        <div class=" bg-form p-5 text-center">Phan <br>
+          Nhà hàng Lẩu Phan tự hào là thương hiệu buffet bò Úc đi đầu cũng như lớn mạnh nhất Hà Nội. Thực khách nhất
+          định sẽ ấn tượng với menu lẩu gồm 3 vị đặc trưng: Lẩu Kim chi cay tê nức mũi, lẩu Thái đậm đà xuýt xoa và Lẩu
+          sấu chua chua. Đặc biệt chính là nhà hàng có 3 set buffet 129k, 179k, 219k vô cùng hấp dẫn, đảm bảo từ chất
+          lượng đến vệ sinh thực phẩm.
+        </div>
+      </div>
+      <div class="container col-md-6">
+        <div class=" bg-form p-5 text-center">Làu <br>
+          Làu Buffet - Nhà hàng Buffet BBQ nổi tiếng Hà Nội, nơi hội tụ nền ẩm thực tinh hoa các nước Châu Á. Nhà hàng
+          sở hữu thực đơn phong phú về hương vị, đa dạng về màu sắc khiến thực khách “phải lòng” bởi độ thơm ngon, hảo
+          hạng cũng như chất lượng tuyệt vời của các món ăn được chế biến dày công, tỉ mỉ. Với 2 set buffet 239k và
+          299k, menu của Làu là sự kết hợp hài hoà của các món Dimsum nóng hổi, Thịt nướng tẩm ướp đậm đà và Hải sản
+          tươi ngon, giàu dinh dưỡng. Ngoài đặc trưng về đồ nướng, Làu Buffet còn có set lẩu với 2 vị lẩu Chua sấu thanh
+          đạm và lẩu Cam thanh ngọt đượm vị hoa quả phục vụ nhu cầu của thực khách.
+          Đặt bàn
+          Xem thực đơn</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container col-md-6">
+        <div class=" bg-form p-5 text-center">Tòng <br>
+          Tòng mang danh nghĩa là quán nhậu, nhưng lại khoác lên mình concept hiện đại, trẻ trung hơn. Menu với 100++
+          món ăn Trung Hoa chế biến và trình bày cầu kỳ, đảm bảo sẽ mang tới cho thực khách những trải nghiệm vô cùng
+          khó quên. Thưởng món ngon giữa chốn bồng lai tiên cảnh nên thơ, Tòng như 1 điểm đến chỉ có trong tranh giữa
+          lòng Hà Nội, nơi xua tan bộn bề và thả mình thư giãn cùng những món ăn ngon.
+        </div>
+      </div>
+
+      <div class="container col-md-6">
+        <div class=" bg-form p-5 text-center">Phan ex
+          Phan Express - Ứng dụng đặt bàn, tích điểm nhận quà thông minh từ chuỗi nhà hàng Lẩu Phan-Làu Buffet-Tòng. Ra
+          đời với mục đích nhằm phục vụ khách hàng một cách tiện lợi và tối ưu nhất, với những tính năng cụ thể như: Xem
+          thực đơn, dễ dàng tìm kiếm nhà hàng gần bạn nhất, đặt bàn nhanh chóng dễ dàng, thanh toán tiện lợi kết hợp
+          tích điểm đổi thưởng nhiều voucher khuyến mãi.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- app -->
+  <div class="container">
+    <div class="row mt-5 mb-5">
+      <div class="col-6">
+        <h3>ỨNG DỤNG THANH TOÁN & TÍCH ĐIỂM PHANEXPRESS</h3>
+        <p> - Tải ứng dụng để tận hưởng ưu đãi từ hệ thống PhanExpress <br>
+          - Cập nhật thông tin mới nhất<br>
+          - Thanh toán & tích điểm trên giá trị hóa đơn</p>
+        <button style="background-image: url('https://phanexpress.com/WebLauPhan/thuonghieu/googleplay.png'); background-repeat: no-repeat; background-size: cover; 
+        width: 270px; height: 90px; border: none; border-radius: 90px ;"></button>
+        <button style="background-image: url('https://phanexpress.com/WebLauPhan/thuonghieu/googleplay.png');  background-repeat: no-repeat; background-size: cover; 
+        width: 270px; height: 90px; border: none; border-radius: 90px ;"></button>
+      </div>
+      <div class="col-6">
+        <div
+          style="background-image: url('https://play-lh.googleusercontent.com/CYHSRzra-tpsx_pByx723CZB3Ky-XpHk9sXTAv_1tbiEE2YVmfQPr7luGEqVE7SM1jC_=w2560-h1440-rw'); 
+        background-repeat: no-repeat; background-size: cover;  width: 270px; height: 500px; border: none; border-radius: 90px; float:right">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
   <!-- footer -->
   <footer class="p-3 mb-2 text-white" style="background-color: #3885bd;">
     <div class="row">

@@ -31,7 +31,7 @@
 
 <body>
   <!-- header -->
-  <nav class="navbar navbar-expand-md " style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-md position-fixed" style="background-color: #e3f2fd;">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="https://lauphan.com/WebLauPhan/theme/logo_phan.svg" alt="Lẩu Phan" class="img-logo">
@@ -59,14 +59,18 @@
           </li>
         </ul>
         <form class="d-flex" role="login">
-          <button class="btn btn-outline-info" type="submit">Đăng nhập <i class="fa-solid fa-user"></i></button>
+          <button class="btn btn-outline-secondary" type="submit">Đăng nhập <i class="fa-solid fa-user"></i></button>
         </form>
       </div>
     </div>
   </nav>
   <!-- main -->
-  <div class="container ">
-    Nội dung trang
+  <div class="container" id="main">
+    <h2 class="text-center text-center-header">
+      Tin ưu đãi
+    </h2>
+    <div class="row mb-5" id="posts"></div>
+    
   </div>
   <!-- footer -->
   <footer class="p-3 mb-2 text-white" style="background-color: #3885bd;">
