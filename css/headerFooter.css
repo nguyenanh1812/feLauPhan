@@ -1,11 +1,19 @@
 body {
-    background: linear-gradient(lightblue, lightgray);
+    /* background: linear-gradient(#cadeec, #46c8e5); */
+    background: repeating-linear-gradient(to left top, #cadeec, #5fc9fa 50%);
+    /* background: repeating-linear-gradient(to left top, #ecdcca, #fdca90 50%); */
     min-width: 300px;
     font-family: 'Finlandica', sans-serif;
     font-size: 20px;
 }
 
 /* header and footer*/
+/* nav {
+    background-color: #f0e6db !important;
+}
+footer {
+    background-color: #f5880b !important;
+} */
 nav .img-logo {
     width: auto;
     height: 38px;

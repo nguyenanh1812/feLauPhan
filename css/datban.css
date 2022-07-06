@@ -13,11 +13,11 @@ nav {
 }
 
 .bg-form {
-    border: 10px solid rgb(240, 249, 252);
     border-radius: 20px;
     background: rgb(247, 247, 247);
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    margin-bottom: 200px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-bottom: 200px; 
+    padding: 20px;
     /* min-width: 300px;
     height: auto; */
     /* position: absolute;

@@ -65,9 +65,159 @@
     </div>
   </nav>
   <!-- main -->
-  <div class="container ">
-    Nội dung trang
+  <div class="container">
+    <!-- banner -->
+    <div class="banner-top p-2 m-2 rounded">
+      <div class="text-center align-mid">
+        <button style="background-image: url('https://phanexpress.com/WebLauPhan/order/phan-icon-selected.svg');"
+          class="rounded border border-warning btn-rest"></button>
+        <button style="background-image: url('https://phanexpress.com/WebLauPhan/order/logo-lau.svg');"
+          class="rounded border border-warning btn-rest"></button>
+        <button style="background-image: url('https://phanexpress.com/WebLauPhan/order/logo-tong.svg');"
+          class="rounded border border-warning btn-rest"></button>
+      </div>
+    </div>
+    <!-- order food -->
+    <div class="row">
+      <div class="col-lg-8 order-lg-2 container ">
+        <div class="bg-form">
+          <h3 class="text-center">Thông tin món</h3>
+          <!-- In Danh sách món ăn từ CSDL fake bằng biến mảng đối tượng -->
+          <div id="list-dish"></div>
+
+            <!-- <div class="row">
+              <p class="text-white p-1" style="background: #fd7e14;"><i class="fa-solid fa-utensils"></i> MÓN ĐẶC BIỆT</p>
+              <div class="col-md-6 container">
+                <div class="d-flex flex-nowrap">
+                  <img src="https://cdn.lauphan.com/photo-storage/myFile-1640705920870.jpeg" alt="Món ăn" width="60px" height="60px" class="m-2">
+                  <div class="m-2"><span class="fw-bold">Name</span> 
+                    <p class="fs-6">
+                      Định lượng:
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-orange">Giá tiền:</p>
+                    <span class="float-right"> 
+                      <i class="fa-solid fa-circle-minus hide"></i>
+                      <span class="price">  </span>
+                      <i class="fa-solid fa-circle-plus"></i>      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 container">
+                <div class="d-flex flex-nowrap">
+                  <img src="https://cdn.lauphan.com/photo-storage/myFile-1640705920870.jpeg" alt="Món ăn" width="60px" height="60px" class="m-2">
+                  <div class="m-2"><span class="fw-bold">Name</span> 
+                    <p class="fs-6">
+                      Định lượng:
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-orange">Giá tiền:</p>
+                    <span> 
+                      <i class="fa-solid fa-circle-minus hide"></i>
+                      <span class="price">  </span>
+                      <i class="fa-solid fa-circle-plus"></i>      
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            
+        </div>
+      </div>
+
+      <div class="col-lg-4 order-lg-1 container">
+        <!-- thông tin ship -->
+        <div class="bg-form">
+          <h3>Thông tin đặt hàng</h3>
+          <label>Họ tên</label>
+          <input type="text">
+          <label>Địa chỉ nhận hàng*</label>
+          <input type="text">
+          <label>Quận*</label>
+          <select id="district">
+            <option>Hoàn Kiếm</option>
+            <option>Ba Đình</option>
+            <option>Thanh Trì</option>
+            <option>Hai Bà Trưng</option>
+            <option>Cầu Giấy</option>
+            <option>Đống Đa</option>
+            <option>Hà Đông</option>
+            <option>19:00</option>
+            <option>Hoàng Mai</option>
+          </select>
+          <label>Số điện thoại</label>
+          <input type="text">
+          <div class="row">
+            <div class="col-6">
+              <label>Ngày giao*</label>
+              <select name="date" id="date">
+                <option value="" selected>Hôm nay</option>
+                <option value="">Ngày mai</option>
+                <option value="">Ngày kia</option>
+                <option value="">Ngày kìa</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label>Giờ giao*</label>
+              <select id="time">
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>15:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+                <option>20:30</option>
+                <option>21:00</option>
+              </select>
+            </div>
+          </div>
+          <label>Ghi chú</label>
+          <input type="text">
+          <p><input type="checkbox"><span>Nhận hóa đơn điện tử</span></p>
+        </div>
+        <!-- Total Bill -->
+        <div class="bg-form">
+          <h3>Các món đã Chọn</h3>
+        
+            <div class="d-flex flex-nowrap">
+              <img src="https://cdn.lauphan.com/photo-storage/myFile-1640705920870.jpeg" alt="Món ăn" width="60px" height="60px" class="m-2">
+              <div class="m-2"><span class="fw-bold">Name</span> 
+                <p class="fs-6">
+                  Định lượng:
+                </p>
+              </div>
+              <div>
+                <p class="text-orange">Giá tiền:</p>
+                <span> 
+                  <i class="fa-solid fa-circle-minus"></i>
+                  <span class="price">  </span>
+                  <i class="fa-solid fa-circle-plus"></i>      
+                </span>
+              </div>
+            </div>
+
+            <hr>
+            <p>Tổng hóa đơn</p>
+            <p>Giảm giá khuyến mại</p>
+            <p>VAT</p>
+            <h3 class="text-center">Số tiền cần thanh toán</h3>
+            <h3 class="text-center text-orange">3.000.000 Vnđ</h3>
+            <p class="text-center">(Giá trên chưa bao gồm phí vận chuyển)</p>
+            <button id="submit"> Đặt hàng</button> 
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  <!--  -->
   </div>
+  
   <!-- footer -->
   <footer class="p-3 mb-2 text-white" style="background-color: #3885bd;">
     <div class="row">
