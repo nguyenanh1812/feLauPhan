@@ -64,17 +64,18 @@ function showShortPosts() {
     for (let i in posts) {
         const postDiv = document.createElement('div')
         postDiv.classList.add('col-xl-4')
-        postDiv.classList.add('mb-2')
+        postDiv.classList.add('mb-5')
         postDiv.innerHTML = ` 
         <div class="card" style="width: 100%;">
           <img src="${posts[i].imgLink}" class="card-img-top" alt="Banner">
           <div class="card-body">
-            <h5 class="card-title">${posts[i].title}</h5>
-            <p class="card-text">${posts[i].description}</p>
+          <div style ="height: 80px">
+            <h5 class="card-title fw-bold">${posts[i].title}</h5> 
+          </div>
+            <p class="card-text fw-normal">${posts[i].description.slice(0,70)}...</p>
             <a href="#" class="btn btn-outline-warning">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </div>
-        `
+        </div>`
         row.append(postDiv)
     }
 } showShortPosts()

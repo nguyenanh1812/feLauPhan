@@ -1,22 +1,24 @@
 .sl-size {
+    border-radius: 20px;
     width: 100%;
-    height: 680px;
+    /* height: 500px; */
     object-fit: cover;
 }
-@media (max-width: 1440px) {
+
+/* @media (max-width: 1440px) {
     .sl-size {
-        height: 520px;
+        height: 400px;
     }
 }
 @media (max-width: 1024px) {
     .sl-size {
-        height: 400px;
+        height: 300px;
     }
 }
 
 @media (max-width: 768px) {
     .sl-size {
-        height: 300px;
+        height: 200px;
     }
 }
 
@@ -24,14 +26,71 @@
     .sl-size {
         height: 150px;
     }
-}
+} */
 
 .bg-form {
     box-sizing: border-box;
-    min-height: 600px ;
+    color: azure;
     border-radius: 2px;
-    background: rgb(247, 247, 247);
+    background: rgb(255, 115, 0);
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     margin-bottom: 20px;
     padding: 20px;
+    border-radius: 5px;
+}
+
+.btnHome {
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    border: none;
+    margin: 5%;
+    background: white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 30px 10px 20px;
+}
+
+.btnHomeMore {
+    padding: 10px 80px 10px 80px;
+}
+
+.btnHomeMore:hover {
+    color: rgb(255, 115, 0);
+}
+
+.btnOrange {
+    color: white;
+    background: rgb(255, 115, 0);
+}
+
+.btnOrange:hover {
+    color: white;
+}
+
+.btnWhite {
+    background: white;
+    color: rgb(255, 115, 0);
+}
+
+.btnWhite:hover {
+    color: rgb(255, 115, 0);
+}
+
+.btnHome-Menu {
+    font-size: 15px;
+    width: 220px;
+}
+
+@media (max-width: 425px) {
+    .btnHome-Menu {
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .btnHome-Menu {
+        font-size: 9px;
+    }
 }

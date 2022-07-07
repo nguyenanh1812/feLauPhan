@@ -44,26 +44,26 @@ const dishes = [
     {
         id: 3,
         type_id: 1,
-        name: "Hoành thánh kem phô mai",
-        description: "300g",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        name: "Bánh gà phô mai",
+        description: "200g",
+        price: "50.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640710979466.jpeg"
     },
     {
         id: 4,
         type_id: 1,
-        name: "Bánh gà phô mai",
+        name: "Hoành thánh kem phô mai",
         description: "300g",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "50.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705409433.jpeg"
     },
     {
         id: 5,
         type_id: 1,
         name: "Salad rong biển trứng cua",
         description: "300g",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "35.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1630169723202.jpeg"
     },
     {
         id: 6,
@@ -71,7 +71,7 @@ const dishes = [
         name: "Gói dịch vụ tiện ích dùng 1 lần",
         description: "Gói dịch vụ bao gồm: 6 bộ Bao giấy đũa, thìa tăm, giấy ăn, 6 Khăn ướt và 1 Khăn trải bàn dùng 1 lần, 6 bộ Bát, Đĩa gia vị dùng 1 lần",
         price: "50.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640711015758.jpeg"
     },
     {
         id: 7,
@@ -79,71 +79,76 @@ const dishes = [
         name: "Gói dịch vụ mượn bếp, nồi, muôi Lẩu",
         description: "Gói dịch vụ bao gồm: 1 bếp gas mini, 2 bình gas, 1 nồi lẩu, 1 bộ muôi lẩu",
         price: "100.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1646736196189.jpeg"
     },
     {
         id: 8,
         type_id: 2,
         name: "Gói dịch vụ mượn bếp",
-        description: "mượn trả",
-        price: "20.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        description: "mượn trả chỉ bếp và nồi",
+        price: "40.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1646736196189.jpeg"
     },
     {
         id: 9,
         type_id: 3,
         name: "Combo 650K lẩu kim chi",
         description: "Set bao gồm: Nước lẩu Kim Chi 2.5 lít,<br>- Nước chấm chua cay 100g- Ba chỉ bò Úc 1000g<br>- Rau và ngô tổng hợp 1100g, Mỳ 4 gói",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "649.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1652932012549.jpeg"
     },
     {
         id: 10,
         type_id: 3,
         name: "Combo 650K lẩu chua sấu",
         description: "Vị Lẩu sấu chua chua",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "669.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1652932012549.jpeg"
     },
     {
         id: 11,
         type_id: 3,
         name: "Combo 650K lẩu Thái",
         description: "Vị Lẩu Thái chua cay",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "659.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1652932012549.jpeg"
     },
     {
         id: 12,
         type_id: 4,
         name: "Combo 867K lẩu kim chi",
-        description: "300g",
+        description: "Vị Lẩu kim chi cay tê nức mũi",
         price: "805.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1652931975443.jpeg"
     },
     {
         id: 14,
         type_id: 5,
         name: "Combo 1310K lẩu kim chi",
-        description: "300g",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        description: `Set bao gồm: <br>- Nước lẩu Thái 2.5 lít, Nước chấm chua cay 100g <br>- Khai vị Salad rong biển trứng cua 230g, Bánh gà phô mai 200g, Hoành thánh kem phô mai 200g, Gà sốt xí muội 250g
+        <br>- Ba chỉ bò Úc 1000g, Bò mềm thượng hạng 200g
+        <br>- Bạch tuộc 150g, Tôm lớt 150g, Thanh cua 70g
+        <br>- Đùi gà thả lẩu 200g, Sủi cảo Hong Kong 200g
+        <br>- Đậu hũ phô mai 120g, Xúc xích phô mai 100g
+        <br>- Rau và ngô tổng hợp 1100g, Mỳ 4 gói`,
+        price: "1310.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705180416.jpeg"
     },
     {
         id: 15,
         type_id: 6,
         name: "Bò mềm thượng hạng",
         description: "300g",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "95.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640710938862.jpeg"
     },
     {
         id: 16,
         type_id: 6,
         name: "Ba chỉ bò Úc Sale 55%",
         description: "300g",
-        price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        price: "55.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705617035.jpeg"
     },
     {
         id: 17,
@@ -151,7 +156,31 @@ const dishes = [
         name: "Bạch tuộc",
         description: "300g",
         price: "105.000",
-        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640706124113.jpeg"
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705329002.jpeg"
+    },
+    {
+        id: 18,
+        type_id: 6,
+        name: "Tôm ướt",
+        description: "500g",
+        price: "215.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705372097.jpeg"
+    },
+    {
+        id: 19,
+        type_id: 6,
+        name: "Tôm tươi",
+        description: "400g",
+        price: "300.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705372097.jpeg"
+    },
+    {
+        id: 20,
+        type_id: 6,
+        name: "Combo rau nhúng",
+        description: "500g",
+        price: "75.000",
+        imgLink: "https://cdn.lauphan.com/photo-storage/myFile-1640705763749.jpeg"
     },
 ]
 

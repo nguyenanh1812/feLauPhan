@@ -25,6 +25,7 @@
     rel="stylesheet">
   <!-- style -->
   <link rel="stylesheet" href="css/headerFooter.css">
+  <link rel="stylesheet" href="css/datban.css">
   <link rel="stylesheet" href="css/diachi.css">
   <title>Lẩu Phan - Địa chỉ</title>
 </head>
@@ -69,9 +70,61 @@
     <h2 class="text-center text-center-header">
       Địa chỉ
     </h2>
+
+    <div class="bg-form container-lg mb-5 mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3 class="cap-restaurant">Nhà Hàng</h3>
+          <div class="row">
+            <div class="bg-logo col container"><button class="btnRest" id="bg-logo-phan"></button>
+              <p id="nameRest-1" class="text-red">Phan</p>
+            </div>
+            <div class="bg-logo col container"><button class="btnRest" id="bg-logo-lau"></button>
+              <p id="nameRest-2">Làu</p>
+            </div>
+            <div class="bg-logo col container"><button class="btnRest" id="bg-logo-tong"></button>
+              <p id="nameRest-3">Tòng</p>
+            </div>
+          </div>
+  
+          <div class="row-choose" id="addr">
+            <p>Cơ sở*</p>
+            <select class="hide-address show-address">
+              <option value="" selected disabled>Chọn Cơ sở Lẩu Phan</option>
+              <option value="Số 989 Giải Phóng, quận Hoàng Mai, Hà Nội">Lẩu Phan Giải Phóng</option>
+              <option value="TT02 MonCity, ngõ 4 Hàm Nghi, Mỹ Đình 1, Nam Từ Liêm, Hà Nội">Lẩu Phan MonCity
+              </option>
+              <option value="Sn 21 - 24 Lô 2 Ngõ 67 Phùng Khoang, Nam Từ Liêm, Hà Nội">Lẩu Phan Phùng Khoang
+              </option>
+            </select>
+            <select class="hide-address ">
+              <option value="" selected disabled>Chọn Cơ sở Làu Buffe</option>
+              <option value="Số 2, Ngõ 34, Nguyên Hồng, Đống Đa, Hà Nội">Làu buffe lẩu nướng Nguyên Hồng
+              </option>
+              <option value="2l ngõ xx đường yy">Làu 2</option>
+              <option value="3l ngõ xx đường zz">Làu 3</option>
+            </select>
+  
+            <select class="hide-address">
+              <option value="" selected disabled>Chọn Cơ sở Tòng</option>
+              <option value="106 Thái Thịnh, Trung Liệt, Đống Đa, Hà Nội">Tòng Thái Thịnh Hà Nội</option>
+              <option value="Tòng 2 đường số 1000 ngõ zz">Tòng 2</option>
+              <option value="Tòng 3 ngõ xx đường hihi">Tòng 3</option>
+            </select>
+          </div>
+          <p id="address"><i class="fa-solid fa-location-dot"></i><span id="address-content"> </span></p>
+        </div>
+          <div class="col-lg-8">
+            <div class="w-100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d251729.9356442763!2d105.57433134831726!3d9.657078700796557!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1657198990035!5m2!1svi!2s" 
+            width="100%" height="400px" style="border:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </div>  
   </div>
   <!-- footer -->
-  <footer class="p-3 mb-2 text-white" style="background-color: #3885bd;">
+  <footer class="p-3 mb-2 text-white mt-5" style="background-color: #3885bd;">
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-5 container">
@@ -92,5 +145,5 @@
   </footer>
 </body>
 <script src="js/diachi.js"></script>
-
+<script src="js/datban.js"></script>
 </html>
