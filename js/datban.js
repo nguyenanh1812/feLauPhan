@@ -35,18 +35,18 @@ document.getElementById('submit').addEventListener('click', function () {
     // if (addr == '') {
     //     alert('Bạn chưa chọn Cơ sở!')
     // }else
-    // if (phoneNum.length != 10) {
-    //     alert('Số điện thoại bạn nhập không chính xác!')
-    // }else
+    if (phoneNum.length != 10) {
+        alert('Số điện thoại bạn nhập không chính xác!')
+    }else
     if (addr == '' || date == '' || time == '' || nameBooked == '' || phoneNum == '') {
         alert('Hãy điền đầy đủ các thông tin bắt buộc(*)!')
     }
     else {
         document.querySelector('.bg-form').innerHTML = `
-        <div class='row'> <h2> Thông tin đặt bàn của bạn </h2>
+        <div class='row'> <h2 class="text-center" style="color: orange"> Thông tin đặt bàn của bạn </h2>
         <p>Địa chỉ quán: ${addr} </p>
         <p>Số lượng người: ${numPeople} </p>
-        <p>Thời gian: ${date} ${time} </p>
+        <p>Thời gian: ${date} - Lúc: ${time} </p>
         <p>Ghi chú: ${note} </p>
         <p>Tên người đặt: ${nameBooked} </p>
         <p>Số điện thoại người đặt: ${phoneNum} </p>
