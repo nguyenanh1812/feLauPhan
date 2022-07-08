@@ -93,12 +93,12 @@
         <!-- thông tin ship -->
         <div class="bg-form">
           <h3>Thông tin đặt hàng</h3>
-          <label>Họ tên</label>
-          <input type="text">
-          <label>Địa chỉ nhận hàng*</label>
-          <input type="text">
+          <label>Họ tên*</label>
+          <input type="text" id="inputName">
+          <label>Địa chỉ*</label>
+          <input type="text" id="inputShip">
           <label>Quận*</label>
-          <select id="district">
+          <select id="inputDistrict">
             <option>Hoàn Kiếm</option>
             <option>Ba Đình</option>
             <option>Thanh Trì</option>
@@ -110,11 +110,11 @@
             <option>Hoàng Mai</option>
           </select>
           <label>Số điện thoại</label>
-          <input type="text">
+          <input type="number" id="inputPhone">
           <div class="row">
             <div class="col-6">
               <label>Ngày giao*</label>
-              <select name="date" id="date">
+              <select name="date" id="inputDate">
                 <option value="" selected>Hôm nay</option>
                 <option value="">Ngày mai</option>
                 <option value="">Ngày kia</option>
@@ -123,7 +123,7 @@
             </div>
             <div class="col-6">
               <label>Giờ giao*</label>
-              <select id="time">
+              <select id="inputTime">
                 <option>11:30</option>
                 <option>12:00</option>
                 <option>12:30</option>
@@ -140,24 +140,23 @@
             </div>
           </div>
           <label>Ghi chú</label>
-          <input type="text">
+          <input type="text" id="inputNote">
           <p><input type="checkbox"><span>Nhận hóa đơn điện tử</span></p>
         </div>
         <!-- Total Bill -->
         <div class="bg-form">
           <h3>Các món đã Chọn</h3>
-            <div id="listOrder">
-
-            </div>
-
+            <div id="listOrder"></div>
             <hr>
-            <p>Tổng hóa đơn: <span style="float: right;" id="dish-Price"></span> </p>
-            <p>Giảm giá khuyến mại: </p>
-            <p>VAT: <spna style="float: right;" id="taxes"></spna></p>
-            <h3 class="text-center">Số tiền cần thanh toán</h3>
-            <h3 class="text-center text-orange" id="total-Price">0.000 Vnđ</h3>
-            <p class="text-center">(Giá trên chưa bao gồm phí vận chuyển)</p>
-            <button id="submit"> Đặt hàng</button> 
+            <div id="billDetail">
+              <p>Tổng hóa đơn: <span style="float: right;" id="dish-Price"></span> </p>
+              <p>Giảm giá khuyến mại: </p>
+              <p>VAT: <spna style="float: right;" id="taxes"></spna></p>
+              <h3 class="text-center">Số tiền cần thanh toán</h3>
+              <h3 class="text-center text-orange" id="total-Price">0.000 Vnđ</h3>
+              <p class="text-center">(Giá trên chưa bao gồm phí vận chuyển)</p>
+            </div>
+            <button id="submitOrder"> Đặt hàng</button> 
         </div>
       </div>
       <!--  -->

@@ -62,7 +62,7 @@
     margin-bottom: 30px;
 }
 
-.row input[type="text"],
+.row input,
 .row select {
     width: 96%;
     border: none;
@@ -71,7 +71,7 @@
     outline: none;
 }
 
-#submit {
+#submitOrder {
     width: 90%;
     height: 50px;
     font-size: 22px;

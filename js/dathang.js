@@ -234,6 +234,7 @@ function showListDish() {
     }
 } showListDish()
 
+//add dish to bill
 let arrId = []
 let totalBill = 0
 let totalDish = 0
@@ -254,8 +255,8 @@ function showBill() {
             j++
             let price = `${dishes[i].price}` * 1
             totalDish += price
-            totalTaxes = (totalDish*0.1).toFixed() 
-            totalBill = totalDish*1 + totalTaxes*1
+            totalTaxes = (totalDish * 0.1).toFixed()
+            totalBill = totalDish * 1 + totalTaxes * 1
             dishPriceDiv.innerText = totalDish + ".000 VNĐ"
             taxesDiv.innerText = totalTaxes + ".000 VNĐ"
             totalPriceDiv.innerText = totalBill + ".000 VNĐ"
@@ -269,22 +270,21 @@ function showBill() {
             //add dish to list Bill
             if (arrId.includes(`${dishes[i].id}`) == 0) {
                 const dishOrder = document.createElement('div')
-                dishOrder.setAttribute('id',`order-${i}`)
+                dishOrder.setAttribute('id', `order-${i}`)
                 dishOrder.innerHTML = `
                 <div class="d-flex bd-highlight mb-3">
                     <div class="p-2 bd-highlight">
                     <img src="${dishes[i].imgLink}" alt="Món ăn" width="60px" height="60px" class="mt-2">
                     </div>
-                    
                     <div class="p-2 bd-highlight">
                     <span class="fw-bold">${dishes[i].name}</span> 
                     </div>
                     <div class="ms-auto p-2 bd-highlight">
                         <p class="text-orange" style="width: 80px">Giá tiền:<br> ${dishes[i].price}</p>
                         <span> 
-                        <i class="fa-solid fa-circle-minus text-orange" id="btn-minus-${dishes[i].id}"></i>
+                        <!-- <i class="fa-solid fa-circle-minus text-orange" id="btn-minus-${dishes[i].id}"></i> -->
                         <span class="price" id="order-quantity-${dishes[i].id}"> 1  </span>
-                        <i class="fa-solid fa-circle-plus text-orange" id="btn-plus-${dishes[i].id}"></i>      
+                        <!--<i class="fa-solid fa-circle-plus text-orange" id="btn-plus-${dishes[i].id}"></i>   -->   
                         </span>
                     </div>
                 </div>
@@ -296,9 +296,9 @@ function showBill() {
             if (arrId.includes(`${dishes[i].id}`) == 0) {
                 arrId.push(`${dishes[i].id}`)
             }
-            else { 
+            else {
                 quantityOr.innerText = quantityOr.innerText * 1 + 1
-                arrId = arrId 
+                arrId = arrId
             }
             console.log(arrId)
         })
@@ -306,9 +306,9 @@ function showBill() {
         btnMinus.addEventListener('click', function () {
             //minus duplicate dish
             const quantityOr = document.getElementById(`order-quantity-${dishes[i].id}`)
-            quantityOr.innerText =   quantityOr.innerText * 1 - 1
+            quantityOr.innerText = quantityOr.innerText * 1 - 1
             //Remove dish
-            if ( quantityOr.innerText < 1) { 
+            if (quantityOr.innerText < 1) {
                 const dishDel = document.getElementById(`order-${i}`)
                 arrId = arrId.splice(`${dishes[i].id}`)
                 dishDel.remove()
@@ -316,8 +316,8 @@ function showBill() {
 
             //Cal Price & quantity
             totalDish -= `${dishes[i].price}`
-            totalTaxes = (totalDish*0.1).toFixed() 
-            totalBill = totalDish*1 + totalTaxes*1
+            totalTaxes = (totalDish * 0.1).toFixed()
+            totalBill = totalDish * 1 + totalTaxes * 1
             j--
             // j ==  0 ? total -= `${dishes[i].price}` : total = total
             dishPriceDiv.innerText = totalDish + ".000 VNĐ"
@@ -333,16 +333,53 @@ function showBill() {
         })
 
         //2 nút cộng trừ trong form bill
-        for(let i of arrId){
-           
+        for (let i of arrId) {
+
         }
     }
 } showBill()
 
 //Bill
-function printBill() {
-    
 
-} printBill()
+
+document.getElementById('submitOrder').addEventListener('click', function () {
+    const cusName = document.getElementById('inputName').innerHTML
+    const shipAddr = document.getElementById('inputShip').innerHTML
+    const district = document.getElementById('inputDistrict').value
+    const phoneNum = document.getElementById('inputPhone').innerHTML
+    const time = document.getElementById('inputTime').value
+    const date = document.getElementById('inputDate').value
+    const note = document.getElementById('inputNote').innerHTML
+    const dishOrder = document.getElementById('listOrder').innerHTML
+    const billDetail = document.getElementById('billDetail').innerHTML
+    if (dishOrder == '') {
+        alert('Bạn chưa chọn món ăn!')
+    }else 
+    {
+        document.querySelector('.bg-form').innerHTML = `
+        <div class="row">
+            <div class="row"> <h2 class="text-center" style="color: orange"> Thông tin đặt bàn của bạn </h2></div>
+            <div class="col-6 border border-2 rounded-start">
+                <p>Tên người đặt: ${cusName} </p>
+                <p>Quận: ${district} </p>
+                <p>Địa chỉ nhận hàng: ${shipAddr} </p>
+                <p>Số lượng người: ${phoneNum} </p>
+                <p>Thời gian: ${date} - Lúc: ${time} </p>
+                <p>Ghi chú: ${note} </p>
+                <p>Số điện thoại người đặt: ${phoneNum} </p>
+            </div>
+            <div class="col-6 border border-2 rounded-end">
+                ${billDetail}
+            </div>
+            <div class="row"> 
+                <p class="text-center">Chi tiết sản phẩm</p>
+                ${dishOrder}
+            </div>
+        </div>`
+    }
+})
+
+
+
 
 
