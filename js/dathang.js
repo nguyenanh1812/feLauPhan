@@ -356,10 +356,11 @@ document.getElementById('submitOrder').addEventListener('click', function () {
         alert('Bạn chưa chọn món ăn!')
     }else 
     {
-        document.querySelector('.bg-form').innerHTML = `
+        document.getElementById('listfood-order').style.display = "none"
+        document.querySelector('#foodOrderBill').innerHTML = `
         <div class="row">
             <div class="row"> <h2 class="text-center" style="color: orange"> Thông tin đặt bàn của bạn </h2></div>
-            <div class="col-6 border border-2 rounded-start">
+            <div class="col-sm-6 border border-2 rounded">
                 <p>Tên người đặt: ${cusName} </p>
                 <p>Quận: ${district} </p>
                 <p>Địa chỉ nhận hàng: ${shipAddr} </p>
@@ -368,7 +369,7 @@ document.getElementById('submitOrder').addEventListener('click', function () {
                 <p>Ghi chú: ${note} </p>
                 <p>Số điện thoại người đặt: ${phoneNum} </p>
             </div>
-            <div class="col-6 border border-2 rounded-end">
+            <div class="col-sm-6 border border-2 rounded">
                 ${billDetail}
             </div>
             <div class="row"> 
@@ -377,6 +378,7 @@ document.getElementById('submitOrder').addEventListener('click', function () {
             </div>
         </div>`
     }
+    
 })
 
 
