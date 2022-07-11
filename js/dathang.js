@@ -343,13 +343,13 @@ function showBill() {
 
 
 document.getElementById('submitOrder').addEventListener('click', function () {
-    const cusName = document.getElementById('inputName').innerHTML
-    const shipAddr = document.getElementById('inputShip').innerHTML
+    const cusName = document.getElementById('inputName').value
+    const shipAddr = document.getElementById('inputShip').value
     const district = document.getElementById('inputDistrict').value
-    const phoneNum = document.getElementById('inputPhone').innerHTML
+    const phoneNum = document.getElementById('inputPhone').value
     const time = document.getElementById('inputTime').value
     const date = document.getElementById('inputDate').value
-    const note = document.getElementById('inputNote').innerHTML
+    const note = document.getElementById('inputNote').value
     const dishOrder = document.getElementById('listOrder').innerHTML
     const billDetail = document.getElementById('billDetail').innerHTML
     if (dishOrder == '') {
